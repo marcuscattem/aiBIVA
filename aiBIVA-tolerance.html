@@ -6,6 +6,7 @@
     <title>aiBIVA - Tolerance</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
@@ -171,6 +172,11 @@
                     </div>
                     <button type="submit" data-i18n="input.add" class="w-full py-2 px-4 bg-green-600 hover:bg-green-700 text-white font-medium rounded-md transition">Adicionar</button>
                 </form>
+                <div class="mt-4 border-t border-gray-200 pt-4">
+                    <input id="toleranceImportFile" type="file" accept=".xlsx,.xls,.csv,.tsv" class="hidden" onchange="importToleranceMeasurements(this)">
+                    <button type="button" onclick="document.getElementById('toleranceImportFile').click()" data-i18n="toleranceImport.button" class="w-full py-2 px-4 bg-sky-600 hover:bg-sky-700 text-white font-medium rounded-md transition">Importar Excel</button>
+                    <button type="button" onclick="downloadToleranceTemplate()" data-i18n="toleranceImport.template" class="mt-2 w-full text-sm font-medium text-sky-700 hover:text-sky-900">Baixar modelo Excel</button>
+                </div>
             </div>
 
             <!-- Estatísticas -->
@@ -232,8 +238,8 @@
 
     </main>
 
-    <script src="aibiva-data.js?v=20260527-1"></script>
+    <script src="aibiva-data.js?v=20260527-2"></script>
     <script>window.AIBIVA_METHOD = 'tolerance';</script>
-    <script src="aibiva-app.js?v=20260527-1"></script>
+    <script src="aibiva-app.js?v=20260527-2"></script>
 </body>
 </html>

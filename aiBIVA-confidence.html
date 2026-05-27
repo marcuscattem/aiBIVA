@@ -6,6 +6,7 @@
     <title>aiBIVA - Confidence</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
@@ -75,55 +76,6 @@
         
         <!-- Sidebar -->
         <aside class="w-full lg:w-80 flex flex-col gap-6 overflow-y-auto no-scrollbar shrink-0">
-            
-            <!-- População de Referência -->
-            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100">
-                <h2 class="text-lg font-semibold mb-4 flex items-center gap-2">
-                    <i data-lucide="database" class="w-5 h-5 text-blue-500"></i> 
-                    <span data-i18n="sidebar.population">População de Referência</span>
-                </h2>
-                
-                <!-- Filtros -->
-                <div class="space-y-3 mb-4">
-                    <div>
-                        <label class="block text-xs font-medium text-gray-700 mb-1" data-i18n="filters.sex">Sexo</label>
-                        <select id="filterSex" onchange="applyFilters()" class="w-full bg-gray-50 border border-gray-300 text-sm rounded-lg p-2">
-                            <option value="" data-i18n="filters.all">Todos</option>
-                            <option value="M" data-i18n="filters.male">Masculino</option>
-                            <option value="F" data-i18n="filters.female">Feminino</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-xs font-medium text-gray-700 mb-1" data-i18n="filters.country">País</label>
-                        <select id="filterCountry" onchange="applyFilters()" class="w-full bg-gray-50 border border-gray-300 text-sm rounded-lg p-2">
-                            <option value="">Todos</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-xs font-medium text-gray-700 mb-1" data-i18n="filters.age">Faixa Etária</label>
-                        <select id="filterAge" onchange="applyFilters()" class="w-full bg-gray-50 border border-gray-300 text-sm rounded-lg p-2">
-                            <option value="" data-i18n="filters.allFem">Todas</option>
-                        </select>
-                    </div>
-                    <div>
-                        <input type="text" id="searchPop" data-i18n-placeholder="filters.search" placeholder="Buscar..." onkeyup="applyFilters()" class="w-full bg-gray-50 border border-gray-300 text-sm rounded-lg p-2">
-                    </div>
-                </div>
-                
-                <select id="referenceGroup" onchange="updateEllipses()" class="w-full bg-gray-50 border border-gray-300 text-sm rounded-lg p-2 mb-3">
-                    <option value="" data-i18n="filters.loading">Carregando...</option>
-                </select>
-                
-                <div id="refStats" class="bg-blue-50 border border-blue-200 rounded-lg p-3 text-sm hidden">
-                    <div class="grid grid-cols-2 gap-2">
-                        <div><span class="text-xs text-gray-600">R/H:</span><br><strong id="refRHMean">-</strong></div>
-                        <div><span class="text-xs text-gray-600" data-i18n="stats.sd">DP:</span><br><strong id="refRHSD">-</strong></div>
-                        <div><span class="text-xs text-gray-600">Xc/H:</span><br><strong id="refXcHMean">-</strong></div>
-                        <div><span class="text-xs text-gray-600" data-i18n="stats.sd">DP:</span><br><strong id="refXcHSD">-</strong></div>
-                    </div>
-                </div>
-            </div>
-
             <!-- Nova Elipse -->
             <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100">
                 <h2 class="text-lg font-semibold mb-4 flex items-center gap-2">
@@ -154,21 +106,21 @@
                     </div>
                     <div class="grid grid-cols-2 gap-3">
                         <div>
-                            <label class="block text-sm font-medium text-gray-700">R/H média</label>
+                            <label id="ellipseMeanXLabel" class="block text-sm font-medium text-gray-700">R/H média</label>
                             <input type="number" id="ellipseRHMean" step="0.0001" required class="mt-1 block w-full rounded-md border border-gray-300 p-2">
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-gray-700">R/H DP</label>
+                            <label id="ellipseSdXLabel" class="block text-sm font-medium text-gray-700">R/H DP</label>
                             <input type="number" id="ellipseRHSD" step="0.0001" required class="mt-1 block w-full rounded-md border border-gray-300 p-2">
                         </div>
                     </div>
                     <div class="grid grid-cols-2 gap-3">
                         <div>
-                            <label class="block text-sm font-medium text-gray-700">Xc/H média</label>
+                            <label id="ellipseMeanYLabel" class="block text-sm font-medium text-gray-700">Xc/H média</label>
                             <input type="number" id="ellipseXcHMean" step="0.0001" required class="mt-1 block w-full rounded-md border border-gray-300 p-2">
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-gray-700">Xc/H DP</label>
+                            <label id="ellipseSdYLabel" class="block text-sm font-medium text-gray-700">Xc/H DP</label>
                             <input type="number" id="ellipseXcHSD" step="0.0001" required class="mt-1 block w-full rounded-md border border-gray-300 p-2">
                         </div>
                     </div>
@@ -218,6 +170,11 @@
                     </div>
                     <button type="submit" data-i18n="ellipseInput.add" class="w-full py-2 px-4 bg-green-600 hover:bg-green-700 text-white font-medium rounded-md transition">Adicionar elipse</button>
                 </form>
+                <div class="mt-4 border-t border-gray-200 pt-4">
+                    <input id="ellipseImportFile" type="file" accept=".xlsx,.xls,.csv,.tsv" class="hidden" onchange="importConfidenceEllipses(this)">
+                    <button type="button" onclick="document.getElementById('ellipseImportFile').click()" data-i18n="ellipseInput.import" class="w-full py-2 px-4 bg-sky-600 hover:bg-sky-700 text-white font-medium rounded-md transition">Import ellipse</button>
+                    <button type="button" onclick="downloadEllipseTemplate()" data-i18n="ellipseInput.template" class="mt-2 w-full text-sm font-medium text-sky-700 hover:text-sky-900">Baixar modelo Excel</button>
+                </div>
             </div>
 
             <!-- Estatísticas -->
@@ -243,10 +200,46 @@
                     <span data-i18n="ellipseCompare.title">Elipses para comparar</span>
                 </h2>
                 <div class="space-y-3">
-                    <div class="flex gap-2">
-                        <button type="button" onclick="selectCurrentEllipseForComparison()" data-i18n="ellipseCompare.markCurrent" class="flex-1 py-2 px-3 bg-sky-600 hover:bg-sky-700 text-white text-sm font-medium rounded-md transition">Marcar atual</button>
-                        <button type="button" onclick="clearEllipseComparison()" data-i18n="ellipseCompare.clear" class="py-2 px-3 bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-medium rounded-md transition">Limpar</button>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-1" data-i18n="filters.sex">Sexo</label>
+                            <select id="ellipseFilterSex" onchange="renderEllipseSelectionList()" class="w-full bg-gray-50 border border-gray-300 text-xs rounded-lg p-2">
+                                <option value="" data-i18n="filters.all">Todos</option>
+                                <option value="M" data-i18n="filters.male">Masculino</option>
+                                <option value="F" data-i18n="filters.female">Feminino</option>
+                                <option value="U">U</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-1" data-i18n="filters.age">Faixa Etária</label>
+                            <select id="ellipseFilterAge" onchange="renderEllipseSelectionList()" class="w-full bg-gray-50 border border-gray-300 text-xs rounded-lg p-2">
+                                <option value="" data-i18n="filters.allFem">Todas</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-1" data-i18n="filters.country">País</label>
+                            <select id="ellipseFilterCountry" onchange="renderEllipseSelectionList()" class="w-full bg-gray-50 border border-gray-300 text-xs rounded-lg p-2">
+                                <option value="" data-i18n="filters.all">Todos</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-1" data-i18n="filters.equipment">Equipamento</label>
+                            <select id="ellipseFilterEquipment" onchange="renderEllipseSelectionList()" class="w-full bg-gray-50 border border-gray-300 text-xs rounded-lg p-2">
+                                <option value="" data-i18n="filters.all">Todos</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-1" data-i18n="filters.population">População</label>
+                            <select id="ellipseFilterPopulation" onchange="renderEllipseSelectionList()" class="w-full bg-gray-50 border border-gray-300 text-xs rounded-lg p-2">
+                                <option value="" data-i18n="filters.all">Todos</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-1" data-i18n="filters.search">Buscar...</label>
+                            <input id="ellipseSearch" type="text" onkeyup="renderEllipseSelectionList()" data-i18n-placeholder="filters.search" placeholder="Buscar..." class="w-full bg-gray-50 border border-gray-300 text-xs rounded-lg p-2">
+                        </div>
                     </div>
+                    <button type="button" onclick="clearEllipseComparison()" data-i18n="ellipseCompare.clear" class="w-full py-2 px-3 bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-medium rounded-md transition">Limpar</button>
                     <div id="ellipseSelectionList" class="max-h-56 overflow-y-auto border border-gray-200 rounded-lg divide-y divide-gray-100 bg-gray-50"></div>
                     <div id="ellipseComparisonResults" class="bg-sky-50 border border-sky-200 rounded-lg p-3 text-sm text-sky-950 hidden"></div>
                 </div>
@@ -296,8 +289,8 @@
 
     </main>
 
-    <script src="aibiva-data.js?v=20260527-1"></script>
+    <script src="aibiva-data.js?v=20260527-2"></script>
     <script>window.AIBIVA_METHOD = 'confidence';</script>
-    <script src="aibiva-app.js?v=20260527-1"></script>
+    <script src="aibiva-app.js?v=20260527-2"></script>
 </body>
 </html>

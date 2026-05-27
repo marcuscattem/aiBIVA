@@ -28,6 +28,8 @@
       'filters.female': 'Feminino',
       'filters.country': 'País',
       'filters.age': 'Faixa Etária',
+      'filters.equipment': 'Equipamento',
+      'filters.population': 'População',
       'filters.search': 'Buscar...',
       'filters.loading': 'Carregando...',
       'filters.none': 'Nenhuma população encontrada',
@@ -51,13 +53,19 @@
       'chart.title': 'Nomograma BIVA (R/H vs Xc/H)',
       'chart.x': 'Resistência / Estatura (R/H) [Ω/m]',
       'chart.y': 'Reatância / Estatura (Xc/H) [Ω/m]',
+      'chart.xShort': 'R/H',
+      'chart.yShort': 'Xc/H',
+      'chart.specificX': 'Resistência específica (Rsp)',
+      'chart.specificY': 'Reatância específica (Xcsp)',
+      'chart.specificXShort': 'Rsp',
+      'chart.specificYShort': 'Xcsp',
       'chart.zx': 'Z(R)',
       'chart.zy': 'Z(Xc)',
       'axis.title': 'Eixos e visualização',
-      'axis.xMin': 'X mín',
-      'axis.xMax': 'X máx',
-      'axis.yMin': 'Y mín',
-      'axis.yMax': 'Y máx',
+      'axis.xMin': '{axis} mín',
+      'axis.xMax': '{axis} máx',
+      'axis.yMin': '{axis} mín',
+      'axis.yMax': '{axis} máx',
       'axis.apply': 'Aplicar eixos',
       'axis.auto': 'Auto',
       'axis.phaseLine': 'Linha ao 0 e ângulo de fase',
@@ -127,6 +135,11 @@
       'style.diamond': 'Losango',
       'style.cross': 'Cruz',
       'ellipseInput.title': 'Nova elipse',
+      'ellipseInput.import': 'Import ellipse',
+      'ellipseInput.template': 'Baixar modelo Excel',
+      'ellipseInput.imported': '{n} elipses importadas.',
+      'ellipseInput.importError': 'Não foi possível importar a planilha. Confira o modelo.',
+      'ellipseInput.emptyImport': 'Nenhuma elipse válida foi encontrada na planilha.',
       'ellipseInput.name': 'Nome da elipse',
       'ellipseInput.type': 'Tipo',
       'ellipseInput.classic': 'Classic',
@@ -140,6 +153,12 @@
       'ellipseInput.add': 'Adicionar elipse',
       'ellipseInput.invalid': 'Informe média, DP, correlação e N válidos para a elipse.',
       'ellipseInput.invalidSpecific': 'No modo Specific, informe braço direito, cintura e panturrilha direita.',
+      'toleranceImport.title': 'Importar participantes',
+      'toleranceImport.button': 'Importar Excel',
+      'toleranceImport.template': 'Baixar modelo Excel',
+      'toleranceImport.imported': '{n} participantes importados.',
+      'toleranceImport.error': 'Não foi possível importar a planilha. Confira o modelo.',
+      'toleranceImport.empty': 'Nenhum participante válido foi encontrado na planilha.',
       'ellipseStyle.line': 'Traço',
       'ellipseStyle.solid': 'Cheio',
       'ellipseStyle.dash': 'Tracejado',
@@ -162,6 +181,8 @@
       'filters.female': 'Female',
       'filters.country': 'Country',
       'filters.age': 'Age Range',
+      'filters.equipment': 'Equipment',
+      'filters.population': 'Population',
       'filters.search': 'Search...',
       'filters.loading': 'Loading...',
       'filters.none': 'No population found',
@@ -185,13 +206,19 @@
       'chart.title': 'BIVA Nomogram (R/H vs Xc/H)',
       'chart.x': 'Resistance / Height (R/H) [Ω/m]',
       'chart.y': 'Reactance / Height (Xc/H) [Ω/m]',
+      'chart.xShort': 'R/H',
+      'chart.yShort': 'Xc/H',
+      'chart.specificX': 'Specific resistance (Rsp)',
+      'chart.specificY': 'Specific reactance (Xcsp)',
+      'chart.specificXShort': 'Rsp',
+      'chart.specificYShort': 'Xcsp',
       'chart.zx': 'Z(R)',
       'chart.zy': 'Z(Xc)',
       'axis.title': 'Axes and view',
-      'axis.xMin': 'X min',
-      'axis.xMax': 'X max',
-      'axis.yMin': 'Y min',
-      'axis.yMax': 'Y max',
+      'axis.xMin': '{axis} min',
+      'axis.xMax': '{axis} max',
+      'axis.yMin': '{axis} min',
+      'axis.yMax': '{axis} max',
       'axis.apply': 'Apply axes',
       'axis.auto': 'Auto',
       'axis.phaseLine': 'Line to 0 and phase angle',
@@ -261,6 +288,11 @@
       'style.diamond': 'Diamond',
       'style.cross': 'Cross',
       'ellipseInput.title': 'New ellipse',
+      'ellipseInput.import': 'Import ellipse',
+      'ellipseInput.template': 'Download Excel template',
+      'ellipseInput.imported': '{n} ellipses imported.',
+      'ellipseInput.importError': 'The spreadsheet could not be imported. Check the template.',
+      'ellipseInput.emptyImport': 'No valid ellipse was found in the spreadsheet.',
       'ellipseInput.name': 'Ellipse name',
       'ellipseInput.type': 'Type',
       'ellipseInput.classic': 'Classic',
@@ -274,6 +306,12 @@
       'ellipseInput.add': 'Add ellipse',
       'ellipseInput.invalid': 'Enter valid mean, SD, correlation and N for the ellipse.',
       'ellipseInput.invalidSpecific': 'For Specific mode, enter right arm, waist and right calf circumferences.',
+      'toleranceImport.title': 'Import participants',
+      'toleranceImport.button': 'Import Excel',
+      'toleranceImport.template': 'Download Excel template',
+      'toleranceImport.imported': '{n} participants imported.',
+      'toleranceImport.error': 'The spreadsheet could not be imported. Check the template.',
+      'toleranceImport.empty': 'No valid participant was found in the spreadsheet.',
       'ellipseStyle.line': 'Line',
       'ellipseStyle.solid': 'Solid',
       'ellipseStyle.dash': 'Dashed',
@@ -296,6 +334,8 @@
       'filters.female': 'Femenino',
       'filters.country': 'País',
       'filters.age': 'Rango de edad',
+      'filters.equipment': 'Equipo',
+      'filters.population': 'Población',
       'filters.search': 'Buscar...',
       'filters.loading': 'Cargando...',
       'filters.none': 'No se encontró población',
@@ -319,13 +359,19 @@
       'chart.title': 'Nomograma BIVA (R/H vs Xc/H)',
       'chart.x': 'Resistencia / Estatura (R/H) [Ω/m]',
       'chart.y': 'Reactancia / Estatura (Xc/H) [Ω/m]',
+      'chart.xShort': 'R/H',
+      'chart.yShort': 'Xc/H',
+      'chart.specificX': 'Resistencia específica (Rsp)',
+      'chart.specificY': 'Reactancia específica (Xcsp)',
+      'chart.specificXShort': 'Rsp',
+      'chart.specificYShort': 'Xcsp',
       'chart.zx': 'Z(R)',
       'chart.zy': 'Z(Xc)',
       'axis.title': 'Ejes y visualización',
-      'axis.xMin': 'X mín',
-      'axis.xMax': 'X máx',
-      'axis.yMin': 'Y mín',
-      'axis.yMax': 'Y máx',
+      'axis.xMin': '{axis} mín',
+      'axis.xMax': '{axis} máx',
+      'axis.yMin': '{axis} mín',
+      'axis.yMax': '{axis} máx',
       'axis.apply': 'Aplicar ejes',
       'axis.auto': 'Auto',
       'axis.phaseLine': 'Línea al 0 y ángulo de fase',
@@ -395,6 +441,11 @@
       'style.diamond': 'Rombo',
       'style.cross': 'Cruz',
       'ellipseInput.title': 'Nueva elipse',
+      'ellipseInput.import': 'Import ellipse',
+      'ellipseInput.template': 'Descargar modelo Excel',
+      'ellipseInput.imported': '{n} elipses importadas.',
+      'ellipseInput.importError': 'No fue posible importar la hoja. Verifique el modelo.',
+      'ellipseInput.emptyImport': 'No se encontró ninguna elipse válida en la hoja.',
       'ellipseInput.name': 'Nombre de la elipse',
       'ellipseInput.type': 'Tipo',
       'ellipseInput.classic': 'Classic',
@@ -408,6 +459,12 @@
       'ellipseInput.add': 'Agregar elipse',
       'ellipseInput.invalid': 'Ingrese media, DE, correlación y N válidos para la elipse.',
       'ellipseInput.invalidSpecific': 'En modo Specific, ingrese brazo derecho, cintura y pantorrilla derecha.',
+      'toleranceImport.title': 'Importar participantes',
+      'toleranceImport.button': 'Importar Excel',
+      'toleranceImport.template': 'Descargar modelo Excel',
+      'toleranceImport.imported': '{n} participantes importados.',
+      'toleranceImport.error': 'No fue posible importar la hoja. Verifique el modelo.',
+      'toleranceImport.empty': 'No se encontró ningún participante válido en la hoja.',
       'ellipseStyle.line': 'Trazo',
       'ellipseStyle.solid': 'Continuo',
       'ellipseStyle.dash': 'Discontinuo',
@@ -445,6 +502,23 @@
 
   function t(key) {
     return (TRANSLATIONS[currentLanguage] && TRANSLATIONS[currentLanguage][key]) || key;
+  }
+
+  function isSpecificView() {
+    if (!(METHOD === 'confidence' || METHOD === 'combined')) return false;
+    const selected = selectedEllipsePopulations();
+    if (selected.length) return selected.every((item) => item.type === 'specific' || item.age_range === 'Specific');
+    return document.getElementById('ellipseType')?.value === 'specific';
+  }
+
+  function axisLabelSet() {
+    if (METHOD === 'tolerance' && tolerancePlotMode === 'zscore') {
+      return { x: t('chart.zx'), y: t('chart.zy'), xShort: t('chart.zx'), yShort: t('chart.zy') };
+    }
+    if (isSpecificView()) {
+      return { x: t('chart.specificX'), y: t('chart.specificY'), xShort: t('chart.specificXShort'), yShort: t('chart.specificYShort') };
+    }
+    return { x: t('chart.x'), y: t('chart.y'), xShort: t('chart.xShort'), yShort: t('chart.yShort') };
   }
 
   function applyTheme(theme = localStorage.getItem('aibivaTheme') || 'light') {
@@ -540,6 +614,21 @@
     return 'Unknown';
   }
 
+  function inferEquipment(legend) {
+    const match = legend.match(/\(([^)]*(?:Akern|RJL|BIA|Bodystat|InBody|Tanita|SEAC)[^)]*)\)/i);
+    if (match) return match[1].replace(/\s+/g, ' ').trim();
+    if (/akern/i.test(legend)) return 'Akern-RJL Systems';
+    if (/rjl/i.test(legend)) return 'RJL Systems';
+    return 'Unknown';
+  }
+
+  function inferPopulationType(legend) {
+    if (/athlet|sport|endurance|velocity|power|team-sports/i.test(legend)) return 'Sport';
+    if (/clinical|patient|disease|renal|cardiac|obese|cancer|sarcopen/i.test(legend)) return 'Clinical';
+    if (/healthy|reference|adult|children|adolescent/i.test(legend)) return 'Healthy';
+    return 'Other';
+  }
+
   function normalizePopulation(pop, index) {
     const legend = String(pop.legend || `População ${index + 1}`).replace(/\s+/g, ' ').trim();
     const source = pop.source === 'confidence' ? 'confidence' : 'tolerance';
@@ -556,6 +645,8 @@
       sex_code: sexCode,
       country: pop.country || inferCountry(legend),
       age_range: pop.age_range || inferAgeRange(legend),
+      equipment: pop.equipment || inferEquipment(legend),
+      population_type: pop.population_type || inferPopulationType(legend),
       n: Number(pop.n) || 1,
       r_h_mean: Number(pop.r_h_mean),
       r_h_sd: Number(pop.r_h_sd),
@@ -583,7 +674,9 @@
   }
 
   function selectedPopulation() {
-    const idx = Number.parseInt(document.getElementById('referenceGroup').value, 10);
+    const select = document.getElementById('referenceGroup');
+    if (!select) return null;
+    const idx = Number.parseInt(select.value, 10);
     return Number.isInteger(idx) && idx >= 0 ? filteredPopulations[idx] : null;
   }
 
@@ -868,6 +961,8 @@
 
   function populateFilter(selectId, values, emptyLabel) {
     const select = document.getElementById(selectId);
+    if (!select) return;
+    const currentValue = select.value;
     select.innerHTML = `<option value="">${emptyLabel}</option>`;
     values
       .filter(Boolean)
@@ -882,6 +977,15 @@
         option.textContent = value;
         select.appendChild(option);
       });
+    if ([...select.options].some((option) => option.value === currentValue)) select.value = currentValue;
+  }
+
+  function populateEllipseFilters() {
+    const confidence = [...allPopulations.filter((pop) => pop.source === 'confidence'), ...userEllipses];
+    populateFilter('ellipseFilterCountry', [...new Set(confidence.map((pop) => pop.country))], t('filters.all'));
+    populateFilter('ellipseFilterAge', [...new Set(confidence.map((pop) => pop.age_range))], t('filters.allFem'));
+    populateFilter('ellipseFilterEquipment', [...new Set(confidence.map((pop) => pop.equipment))], t('filters.all'));
+    populateFilter('ellipseFilterPopulation', [...new Set(confidence.map((pop) => pop.population_type))], t('filters.all'));
   }
 
   function loadReferencePopulations() {
@@ -891,10 +995,18 @@
 
     populateFilter('filterCountry', [...new Set(allPopulations.map((pop) => pop.country))], t('filters.all'));
     populateFilter('filterAge', [...new Set(allPopulations.map((pop) => pop.age_range))], t('filters.allFem'));
+    populateEllipseFilters();
     applyFilters();
   }
 
   function applyFilters() {
+    const select = document.getElementById('referenceGroup');
+    if (!select) {
+      filteredPopulations = allPopulations;
+      renderEllipseSelectionList();
+      if (bivaChart) updateEllipses();
+      return;
+    }
     const searchTerm = document.getElementById('searchPop').value.trim().toLowerCase();
     const sexFilter = document.getElementById('filterSex').value;
     const countryFilter = document.getElementById('filterCountry').value;
@@ -909,7 +1021,6 @@
       return matchSearch && matchSex && matchCountry && matchAge;
     });
 
-    const select = document.getElementById('referenceGroup');
     select.innerHTML = '';
 
     if (!filteredPopulations.length) {
@@ -939,11 +1050,14 @@
     const pop = selectedPopulation();
     if (!pop) return;
 
-    document.getElementById('refRHMean').textContent = pop.r_h_mean.toFixed(2);
-    document.getElementById('refRHSD').textContent = pop.r_h_sd.toFixed(2);
-    document.getElementById('refXcHMean').textContent = pop.xc_h_mean.toFixed(2);
-    document.getElementById('refXcHSD').textContent = pop.xc_h_sd.toFixed(2);
-    document.getElementById('refStats').classList.remove('hidden');
+    const refStats = document.getElementById('refStats');
+    if (refStats) {
+      document.getElementById('refRHMean').textContent = pop.r_h_mean.toFixed(2);
+      document.getElementById('refRHSD').textContent = pop.r_h_sd.toFixed(2);
+      document.getElementById('refXcHMean').textContent = pop.xc_h_mean.toFixed(2);
+      document.getElementById('refXcHSD').textContent = pop.xc_h_sd.toFixed(2);
+      refStats.classList.remove('hidden');
+    }
     updateEllipses();
   }
 
@@ -971,8 +1085,25 @@
   }
 
   function confidenceCandidates() {
-    if (METHOD === 'confidence' || METHOD === 'combined') return [...filteredPopulations.filter((pop) => pop.source === 'confidence'), ...userEllipses];
-    return filteredPopulations.filter((pop) => pop.source === 'confidence');
+    const base = METHOD === 'confidence' || METHOD === 'combined'
+      ? [...allPopulations.filter((pop) => pop.source === 'confidence'), ...userEllipses]
+      : allPopulations.filter((pop) => pop.source === 'confidence');
+    const value = (id) => document.getElementById(id)?.value || '';
+    const search = value('ellipseSearch').trim().toLowerCase();
+    const sex = value('ellipseFilterSex');
+    const country = value('ellipseFilterCountry');
+    const age = value('ellipseFilterAge');
+    const equipment = value('ellipseFilterEquipment');
+    const populationType = value('ellipseFilterPopulation');
+    return base.filter((pop) => {
+      const searchable = `${pop.name} ${pop.legend} ${pop.country} ${pop.age_range} ${pop.equipment} ${pop.population_type}`.toLowerCase();
+      return (!search || searchable.includes(search))
+        && (!sex || pop.sex_code === sex)
+        && (!country || pop.country === country)
+        && (!age || pop.age_range === age)
+        && (!equipment || pop.equipment === equipment)
+        && (!populationType || pop.population_type === populationType);
+    });
   }
 
   function selectedEllipsePopulations() {
@@ -1301,6 +1432,7 @@
     userEllipses = userEllipses.filter((pop) => pop.key !== key);
     selectedEllipseKeys.delete(key);
     compareSelectedEllipses();
+    populateEllipseFilters();
     renderEllipseSelectionList();
     updateEllipses();
     updateStats();
@@ -1314,6 +1446,95 @@
       const input = document.getElementById(id);
       if (input) input.required = isSpecific;
     });
+    const axisLabels = isSpecific
+      ? { xShort: t('chart.specificXShort'), yShort: t('chart.specificYShort') }
+      : { xShort: t('chart.xShort'), yShort: t('chart.yShort') };
+    const fieldLabels = [
+      ['ellipseMeanXLabel', `${axisLabels.xShort} média`],
+      ['ellipseSdXLabel', `${axisLabels.xShort} DP`],
+      ['ellipseMeanYLabel', `${axisLabels.yShort} média`],
+      ['ellipseSdYLabel', `${axisLabels.yShort} DP`]
+    ];
+    fieldLabels.forEach(([id, text]) => {
+      const label = document.getElementById(id);
+      if (label) label.textContent = text;
+    });
+    if (bivaChart) updateDatasetLabels();
+    renderChartOptionsPanel();
+  }
+
+  function parseLocaleNumber(value) {
+    if (typeof value === 'number') return value;
+    const text = String(value ?? '').trim();
+    if (!text) return NaN;
+    const normalized = text.replace(/\./g, '').replace(',', '.');
+    const direct = Number.parseFloat(text);
+    const localized = Number.parseFloat(normalized);
+    return Number.isFinite(direct) && !/,/.test(text) ? direct : localized;
+  }
+
+  function sanitizeKey(value) {
+    return String(value ?? '')
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '_')
+      .replace(/^_|_$/g, '');
+  }
+
+  function readRowValue(row, aliases) {
+    const normalized = Object.fromEntries(Object.entries(row).map(([key, value]) => [sanitizeKey(key), value]));
+    for (const alias of aliases) {
+      const key = sanitizeKey(alias);
+      if (Object.prototype.hasOwnProperty.call(normalized, key)) return normalized[key];
+    }
+    return '';
+  }
+
+  function validEllipseRaw(raw, type) {
+    const baseValid = [raw.r_h_mean, raw.r_h_sd, raw.xc_h_mean, raw.xc_h_sd, raw.correlation, raw.n].every(Number.isFinite)
+      && raw.r_h_sd > 0
+      && raw.xc_h_sd > 0
+      && raw.n > P
+      && Math.abs(raw.correlation) < 1;
+    if (!baseValid) return false;
+    if (type !== 'specific') return true;
+    return [raw.arm, raw.waist, raw.calf].every((value) => Number.isFinite(value) && value > 0);
+  }
+
+  function makeCustomEllipse(raw, type = 'classic', style = {}) {
+    let geometryFactor = 1;
+    if (type === 'specific') geometryFactor = specificGeometryFactor(raw.arm, raw.waist, raw.calf);
+    const key = `custom:${Date.now()}:${customEllipseCounter}`;
+    const pop = normalizePopulation({
+      code: `C${customEllipseCounter}`,
+      n: raw.n,
+      r_h_mean: raw.r_h_mean * geometryFactor,
+      r_h_sd: raw.r_h_sd * geometryFactor,
+      xc_h_mean: raw.xc_h_mean * geometryFactor,
+      xc_h_sd: raw.xc_h_sd * geometryFactor,
+      correlation: raw.correlation,
+      sex: raw.sex || 'U',
+      legend: `${raw.name} (${type})`,
+      source: 'confidence',
+      country: raw.country || 'Custom',
+      age_range: raw.age_range || (type === 'specific' ? 'Specific' : 'Classic'),
+      equipment: raw.equipment || 'Custom',
+      population_type: raw.population_type || 'Custom'
+    }, SOURCE_DATA.length + customEllipseCounter);
+    pop.key = key;
+    pop.custom = true;
+    pop.type = type;
+    pop.moment = raw.moment || 'T1';
+    pop.pairId = raw.pairId || raw.name;
+    pop.raw = { ...raw, geometryFactor };
+    pop.style = {
+      color: style.color || raw.color || ellipseColor(customEllipseCounter - 1),
+      dash: style.dash || raw.dash || 'solid',
+      width: Number.parseInt(style.width || raw.width, 10) || 2
+    };
+    customEllipseCounter += 1;
+    return pop;
   }
 
   function addConfidenceEllipse(event) {
@@ -1338,51 +1559,25 @@
       window.alert(t('ellipseInput.invalid'));
       return;
     }
-
-    let geometryFactor = 1;
-    if (type === 'specific') {
-      if (![raw.arm, raw.waist, raw.calf].every((value) => Number.isFinite(value) && value > 0)) {
-        window.alert(t('ellipseInput.invalidSpecific'));
-        return;
-      }
-      geometryFactor = specificGeometryFactor(raw.arm, raw.waist, raw.calf);
+    if (type === 'specific' && !validEllipseRaw(raw, type)) {
+      window.alert(t('ellipseInput.invalidSpecific'));
+      return;
     }
 
-    const key = `custom:${Date.now()}:${customEllipseCounter}`;
-    const pop = normalizePopulation({
-      code: `C${customEllipseCounter}`,
-      n: raw.n,
-      r_h_mean: raw.r_h_mean * geometryFactor,
-      r_h_sd: raw.r_h_sd * geometryFactor,
-      xc_h_mean: raw.xc_h_mean * geometryFactor,
-      xc_h_sd: raw.xc_h_sd * geometryFactor,
-      correlation: raw.correlation,
-      sex: 'U',
-      legend: `${raw.name} (${type})`,
-      source: 'confidence',
-      country: 'Custom',
-      age_range: type === 'specific' ? 'Specific' : 'Classic'
-    }, SOURCE_DATA.length + customEllipseCounter);
-    pop.key = key;
-    pop.custom = true;
-    pop.type = type;
-    pop.moment = raw.moment;
-    pop.pairId = raw.pairId || raw.name;
-    pop.raw = { ...raw, geometryFactor };
-    pop.style = {
+    const pop = makeCustomEllipse(raw, type, {
       color: document.getElementById('ellipseColor').value,
       dash: document.getElementById('ellipseDash').value,
       width: Number.parseInt(document.getElementById('ellipseWidth').value, 10) || 2
-    };
+    });
     userEllipses.push(pop);
     selectedEllipseKeys.add(pop.key);
-    customEllipseCounter += 1;
     document.getElementById('measurementForm').reset();
     document.getElementById('ellipseName').value = `Elipse ${customEllipseCounter}`;
     document.getElementById('ellipseMoment').value = raw.moment;
     document.getElementById('ellipseType').value = type;
     document.getElementById('ellipseColor').value = ellipseColor(customEllipseCounter - 1);
     updateConfidenceInputMode();
+    populateEllipseFilters();
     compareSelectedEllipses();
     renderEllipseSelectionList();
     updateEllipses();
@@ -1405,8 +1600,9 @@
       if (labels[dataset.id]) dataset.label = labels[dataset.id];
     });
     if (bivaChart.options?.scales) {
-      bivaChart.options.scales.x.title.text = METHOD === 'tolerance' && tolerancePlotMode === 'zscore' ? t('chart.zx') : t('chart.x');
-      bivaChart.options.scales.y.title.text = METHOD === 'tolerance' && tolerancePlotMode === 'zscore' ? t('chart.zy') : t('chart.y');
+      const axisLabels = axisLabelSet();
+      bivaChart.options.scales.x.title.text = axisLabels.x;
+      bivaChart.options.scales.y.title.text = axisLabels.y;
       if (METHOD === 'tolerance' && tolerancePlotMode === 'zscore') {
         bivaChart.options.scales.x.min = -4;
         bivaChart.options.scales.x.max = 4;
@@ -1581,12 +1777,13 @@
 
       ctx.fillStyle = '#111827';
       ctx.font = '600 12px Segoe UI, Arial, sans-serif';
-      ctx.fillText(METHOD === 'tolerance' && tolerancePlotMode === 'zscore' ? t('chart.zx') : t('chart.x'), pad.left + plotW / 2, height - 26);
+      const axisLabels = axisLabelSet();
+      ctx.fillText(axisLabels.x, pad.left + plotW / 2, height - 26);
 
       ctx.save();
       ctx.translate(18, pad.top + plotH / 2);
       ctx.rotate(-Math.PI / 2);
-      ctx.fillText(METHOD === 'tolerance' && tolerancePlotMode === 'zscore' ? t('chart.zy') : t('chart.y'), 0, 0);
+      ctx.fillText(axisLabels.y, 0, 0);
       ctx.restore();
 
       let legendX = pad.left;
@@ -1624,15 +1821,9 @@
         dataset.data = [];
       });
 
-    if (!pop) {
-      updatePhaseLines(pop);
-      bivaChart.update();
-      return;
-    }
-
     const byId = Object.fromEntries(bivaChart.data.datasets.map((dataset) => [dataset.id, dataset]));
 
-    if (byId.tolerance95) {
+    if (pop && byId.tolerance95) {
       const centerX = METHOD === 'tolerance' && tolerancePlotMode === 'zscore' ? 0 : pop.r_h_mean;
       const centerY = METHOD === 'tolerance' && tolerancePlotMode === 'zscore' ? 0 : pop.xc_h_mean;
       const sdX = METHOD === 'tolerance' && tolerancePlotMode === 'zscore' ? 1 : pop.r_h_sd;
@@ -1642,7 +1833,7 @@
       byId.tolerance50.data = generateEllipse(centerX, centerY, sdX, sdY, pop.correlation, CHI_SQUARE.tolerance50);
     }
 
-    if (byId.confidence95) {
+    if (pop && byId.confidence95) {
       byId.confidence95.data = generateEllipse(
         pop.r_h_mean,
         pop.xc_h_mean,
@@ -1740,11 +1931,11 @@
         },
         scales: {
           x: {
-            title: { display: true, text: METHOD === 'tolerance' && tolerancePlotMode === 'zscore' ? t('chart.zx') : t('chart.x'), font: { weight: 'bold' } },
+            title: { display: true, text: axisLabelSet().x, font: { weight: 'bold' } },
             grid: { color: 'rgba(0,0,0,0.05)' }
           },
           y: {
-            title: { display: true, text: METHOD === 'tolerance' && tolerancePlotMode === 'zscore' ? t('chart.zy') : t('chart.y'), font: { weight: 'bold' } },
+            title: { display: true, text: axisLabelSet().y, font: { weight: 'bold' } },
             grid: { color: 'rgba(0,0,0,0.05)' }
           }
         }
@@ -1901,16 +2092,18 @@
       panel.className = 'bg-white p-5 rounded-xl shadow-sm border border-gray-100';
       aside.insertBefore(panel, clearBtn);
     }
+    const axisLabels = axisLabelSet();
+    const axisText = (key, label) => t(key).replace('{axis}', label);
     panel.innerHTML = `
       <h2 class="text-lg font-semibold mb-4 flex items-center gap-2">
         <i data-lucide="settings-2" class="w-5 h-5 text-cyan-500"></i>
         <span>${t('axis.title')}</span>
       </h2>
       <div class="grid grid-cols-2 gap-3">
-        <label class="text-xs font-medium text-gray-700">${t('axis.xMin')}<input id="axisXMin" type="number" step="any" value="${axisSettings?.xMin ?? ''}" class="mt-1 w-full rounded-md border border-gray-300 p-2 text-sm"></label>
-        <label class="text-xs font-medium text-gray-700">${t('axis.xMax')}<input id="axisXMax" type="number" step="any" value="${axisSettings?.xMax ?? ''}" class="mt-1 w-full rounded-md border border-gray-300 p-2 text-sm"></label>
-        <label class="text-xs font-medium text-gray-700">${t('axis.yMin')}<input id="axisYMin" type="number" step="any" value="${axisSettings?.yMin ?? ''}" class="mt-1 w-full rounded-md border border-gray-300 p-2 text-sm"></label>
-        <label class="text-xs font-medium text-gray-700">${t('axis.yMax')}<input id="axisYMax" type="number" step="any" value="${axisSettings?.yMax ?? ''}" class="mt-1 w-full rounded-md border border-gray-300 p-2 text-sm"></label>
+        <label class="text-xs font-medium text-gray-700">${axisText('axis.xMin', axisLabels.xShort)}<input id="axisXMin" type="number" step="any" value="${axisSettings?.xMin ?? ''}" class="mt-1 w-full rounded-md border border-gray-300 p-2 text-sm"></label>
+        <label class="text-xs font-medium text-gray-700">${axisText('axis.xMax', axisLabels.xShort)}<input id="axisXMax" type="number" step="any" value="${axisSettings?.xMax ?? ''}" class="mt-1 w-full rounded-md border border-gray-300 p-2 text-sm"></label>
+        <label class="text-xs font-medium text-gray-700">${axisText('axis.yMin', axisLabels.yShort)}<input id="axisYMin" type="number" step="any" value="${axisSettings?.yMin ?? ''}" class="mt-1 w-full rounded-md border border-gray-300 p-2 text-sm"></label>
+        <label class="text-xs font-medium text-gray-700">${axisText('axis.yMax', axisLabels.yShort)}<input id="axisYMax" type="number" step="any" value="${axisSettings?.yMax ?? ''}" class="mt-1 w-full rounded-md border border-gray-300 p-2 text-sm"></label>
       </div>
       <div class="mt-3 flex gap-2">
         <button type="button" onclick="applyAxisSettings()" class="flex-1 rounded-md bg-cyan-600 px-3 py-2 text-sm font-medium text-white hover:bg-cyan-700">${t('axis.apply')}</button>
@@ -2212,12 +2405,224 @@
     renderRelatedStylePanel();
   }
 
+  function parseDelimited(text) {
+    const lines = text.split(/\r?\n/).filter((line) => line.trim());
+    if (!lines.length) return [];
+    const separator = lines[0].includes('\t') ? '\t' : (lines[0].includes(';') ? ';' : ',');
+    const split = (line) => {
+      const cells = [];
+      let current = '';
+      let quoted = false;
+      for (let i = 0; i < line.length; i += 1) {
+        const char = line[i];
+        if (char === '"' && line[i + 1] === '"') {
+          current += '"';
+          i += 1;
+        } else if (char === '"') {
+          quoted = !quoted;
+        } else if (char === separator && !quoted) {
+          cells.push(current.trim());
+          current = '';
+        } else {
+          current += char;
+        }
+      }
+      cells.push(current.trim());
+      return cells;
+    };
+    const headers = split(lines[0]);
+    return lines.slice(1).map((line) => {
+      const values = split(line);
+      return Object.fromEntries(headers.map((header, index) => [header, values[index] ?? '']));
+    });
+  }
+
+  function parseHtmlTable(text) {
+    const doc = new DOMParser().parseFromString(text, 'text/html');
+    const table = doc.querySelector('table');
+    if (!table) return [];
+    const trs = [...table.querySelectorAll('tr')];
+    const headers = [...trs.shift()?.children || []].map((cell) => cell.textContent.trim());
+    return trs.map((tr) => {
+      const values = [...tr.children].map((cell) => cell.textContent.trim());
+      return Object.fromEntries(headers.map((header, index) => [header, values[index] ?? '']));
+    });
+  }
+
+  function readSpreadsheet(file) {
+    return new Promise((resolve, reject) => {
+      const useXlsx = window.XLSX && /\.(xlsx|xls|xlsm)$/i.test(file.name);
+      const reader = new FileReader();
+      reader.onerror = () => reject(reader.error);
+      reader.onload = () => {
+        try {
+          if (useXlsx) {
+            const workbook = window.XLSX.read(reader.result, { type: 'array' });
+            const sheet = workbook.Sheets[workbook.SheetNames[0]];
+            resolve(window.XLSX.utils.sheet_to_json(sheet, { defval: '' }));
+            return;
+          }
+          const text = String(reader.result || '');
+          resolve(/<table/i.test(text) ? parseHtmlTable(text) : parseDelimited(text));
+        } catch (error) {
+          reject(error);
+        }
+      };
+      if (useXlsx) reader.readAsArrayBuffer(file);
+      else reader.readAsText(file);
+    });
+  }
+
+  function downloadWorkbook(filenameBase, sheets) {
+    if (window.XLSX) {
+      const workbook = window.XLSX.utils.book_new();
+      sheets.forEach((sheet) => {
+        const worksheet = window.XLSX.utils.aoa_to_sheet(sheet.rows);
+        window.XLSX.utils.book_append_sheet(workbook, worksheet, sheet.name.slice(0, 31));
+      });
+      window.XLSX.writeFile(workbook, `${filenameBase}.xlsx`);
+      return;
+    }
+    const html = [
+      '<html><head><meta charset="UTF-8"></head><body>',
+      ...sheets.map((sheet) => `<h2>${escapeHtml(sheet.name)}</h2><table border="1">${sheet.rows.map((row, index) => htmlRow(row, index === 0)).join('')}</table>`),
+      '</body></html>'
+    ].join('\n');
+    const blob = new Blob([html], { type: 'application/vnd.ms-excel;charset=utf-8' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = `${filenameBase}.xls`;
+    link.click();
+    setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+  }
+
+  function rowToEllipseRaw(row) {
+    const type = String(readRowValue(row, ['tipo', 'type']) || 'classic').trim().toLowerCase() === 'specific' ? 'specific' : 'classic';
+    const raw = {
+      name: String(readRowValue(row, ['nome', 'name', 'elipse', 'ellipse']) || `Elipse ${customEllipseCounter}`).trim(),
+      moment: String(readRowValue(row, ['momento', 'moment', 'time']) || 'T1').trim(),
+      pairId: String(readRowValue(row, ['id_pareado', 'paired_id', 'pair_id']) || '').trim(),
+      r_h_mean: parseLocaleNumber(readRowValue(row, ['r_h_media', 'r_h_mean', 'rh_mean', 'media_r_h', 'rsp_media', 'rsp_mean'])),
+      r_h_sd: parseLocaleNumber(readRowValue(row, ['r_h_dp', 'r_h_sd', 'rh_sd', 'dp_r_h', 'rsp_dp', 'rsp_sd'])),
+      xc_h_mean: parseLocaleNumber(readRowValue(row, ['xc_h_media', 'xc_h_mean', 'xch_mean', 'media_xc_h', 'xcsp_media', 'xcsp_mean'])),
+      xc_h_sd: parseLocaleNumber(readRowValue(row, ['xc_h_dp', 'xc_h_sd', 'xch_sd', 'dp_xc_h', 'xcsp_dp', 'xcsp_sd'])),
+      correlation: parseLocaleNumber(readRowValue(row, ['correlacao', 'correlation', 'r', 'rho'])),
+      n: Number.parseInt(parseLocaleNumber(readRowValue(row, ['n'])), 10),
+      arm: parseLocaleNumber(readRowValue(row, ['braco_direito_cm', 'right_arm_cm', 'arm_cm'])),
+      waist: parseLocaleNumber(readRowValue(row, ['cintura_cm', 'waist_cm'])),
+      calf: parseLocaleNumber(readRowValue(row, ['panturrilha_direita_cm', 'right_calf_cm', 'calf_cm'])),
+      sex: String(readRowValue(row, ['sexo', 'sex']) || 'U').trim(),
+      country: String(readRowValue(row, ['pais', 'country']) || 'Custom').trim(),
+      age_range: String(readRowValue(row, ['faixa_etaria', 'age_range', 'age']) || (type === 'specific' ? 'Specific' : 'Classic')).trim(),
+      equipment: String(readRowValue(row, ['equipamento', 'equipment']) || 'Custom').trim(),
+      population_type: String(readRowValue(row, ['populacao', 'population', 'population_type']) || 'Custom').trim(),
+      color: String(readRowValue(row, ['cor', 'color']) || '').trim(),
+      dash: String(readRowValue(row, ['traco', 'dash', 'line']) || 'solid').trim(),
+      width: parseLocaleNumber(readRowValue(row, ['espessura', 'width']))
+    };
+    return { type, raw };
+  }
+
+  async function importConfidenceEllipses(input) {
+    const file = input.files?.[0];
+    input.value = '';
+    if (!file) return;
+    try {
+      const rows = await readSpreadsheet(file);
+      const imported = [];
+      rows.forEach((row) => {
+        const { raw, type } = rowToEllipseRaw(row);
+        if (!validEllipseRaw(raw, type)) return;
+        const pop = makeCustomEllipse(raw, type, { color: raw.color, dash: raw.dash, width: raw.width });
+        imported.push(pop);
+      });
+      if (!imported.length) {
+        window.alert(t('ellipseInput.emptyImport'));
+        return;
+      }
+      userEllipses.push(...imported);
+      imported.forEach((pop) => selectedEllipseKeys.add(pop.key));
+      populateEllipseFilters();
+      compareSelectedEllipses();
+      renderEllipseSelectionList();
+      updateEllipses();
+      updateStats();
+      refreshAnalysisControls();
+      window.alert(t('ellipseInput.imported').replace('{n}', imported.length));
+    } catch (_) {
+      window.alert(t('ellipseInput.importError'));
+    }
+  }
+
+  function downloadEllipseTemplate() {
+    downloadWorkbook('aiBIVA-modelo-elipses', [{
+      name: 'elipses',
+      rows: [
+        ['nome', 'tipo', 'momento', 'id_pareado', 'r_h_media', 'r_h_dp', 'xc_h_media', 'xc_h_dp', 'correlacao', 'n', 'sexo', 'faixa_etaria', 'pais', 'equipamento', 'populacao', 'cor', 'traco', 'espessura', 'braco_direito_cm', 'cintura_cm', 'panturrilha_direita_cm'],
+        ['Grupo A T1', 'classic', 'T1', 'Grupo A', 310, 45, 32, 6, 0.72, 40, 'M', 'Adult', 'Brazil', 'Akern', 'Healthy', '#0ea5e9', 'solid', 2, '', '', ''],
+        ['Grupo A T2 specific', 'specific', 'T2', 'Grupo A', 315, 42, 34, 5.5, 0.70, 40, 'M', 'Adult', 'Brazil', 'Akern', 'Healthy', '#f97316', 'dash', 2, 31, 82, 36]
+      ]
+    }]);
+  }
+
+  function rowToMeasurement(row) {
+    const r = parseLocaleNumber(readRowValue(row, ['r', 'resistencia', 'resistance']));
+    const xc = parseLocaleNumber(readRowValue(row, ['xc', 'reatancia', 'reactance']));
+    const h = parseLocaleNumber(readRowValue(row, ['h', 'estatura', 'height']));
+    if (![r, xc, h].every(Number.isFinite) || r <= 0 || xc <= 0 || h <= 0) return null;
+    return {
+      id: String(readRowValue(row, ['id', 'identificacao', 'identifier']) || `Medição ${measurements.length + 1}`).trim(),
+      group: String(readRowValue(row, ['grupo', 'group']) || 'A').trim(),
+      moment: String(readRowValue(row, ['momento', 'moment', 'time']) || 'T1').trim(),
+      R: r,
+      Xc: xc,
+      H: h,
+      r_h: r / h,
+      xc_h: xc / h
+    };
+  }
+
+  async function importToleranceMeasurements(input) {
+    const file = input.files?.[0];
+    input.value = '';
+    if (!file) return;
+    try {
+      const rows = await readSpreadsheet(file);
+      const imported = rows.map(rowToMeasurement).filter(Boolean);
+      if (!imported.length) {
+        window.alert(t('toleranceImport.empty'));
+        return;
+      }
+      measurements.push(...imported);
+      syncMeasurementStyles();
+      updateStats();
+      refreshAnalysisControls();
+      renderRelatedStylePanel();
+      window.alert(t('toleranceImport.imported').replace('{n}', imported.length));
+    } catch (_) {
+      window.alert(t('toleranceImport.error'));
+    }
+  }
+
+  function downloadToleranceTemplate() {
+    downloadWorkbook('aiBIVA-modelo-participantes', [{
+      name: 'participantes',
+      rows: [
+        ['id', 'grupo', 'momento', 'r', 'xc', 'h'],
+        ['P001', 'Controle', 'T1', 520, 52, 1.72],
+        ['P002', 'Controle', 'T1', 498, 49, 1.68],
+        ['P001', 'Controle', 'T2', 505, 50, 1.72]
+      ]
+    }]);
+  }
+
   function clearAllMeasurements() {
     if (METHOD === 'confidence') {
       userEllipses = [];
       selectedEllipseKeys = new Set();
       ellipseComparisonResults = [];
       currentAnalysisResult = null;
+      populateEllipseFilters();
       renderEllipseSelectionList();
       updateEllipses();
       updateStats();
@@ -2342,33 +2747,26 @@
 
   function exportExcel() {
     const pop = selectedPopulation();
-    const rows = [];
-    rows.push('<html><head><meta charset="UTF-8"></head><body>');
-    rows.push(`<h1>aiBIVA - ${t('method.title')}</h1>`);
-
-    rows.push(`<h2>${t('sidebar.population')}</h2><table border="1">`);
-    rows.push(htmlRow(['Campo', 'Valor'], true));
+    const sheets = [];
+    const referenceRows = [['Campo', 'Valor']];
     if (pop) {
-      rows.push(htmlRow(['Nome', pop.name]));
-      rows.push(htmlRow(['N', pop.n]));
-      rows.push(htmlRow(['R/H média', pop.r_h_mean]));
-      rows.push(htmlRow(['R/H DP', pop.r_h_sd]));
-      rows.push(htmlRow(['Xc/H média', pop.xc_h_mean]));
-      rows.push(htmlRow(['Xc/H DP', pop.xc_h_sd]));
-      rows.push(htmlRow(['Correlação', pop.correlation]));
+      referenceRows.push(['Nome', pop.name]);
+      referenceRows.push(['N', pop.n]);
+      referenceRows.push(['R/H média', pop.r_h_mean]);
+      referenceRows.push(['R/H DP', pop.r_h_sd]);
+      referenceRows.push(['Xc/H média', pop.xc_h_mean]);
+      referenceRows.push(['Xc/H DP', pop.xc_h_sd]);
+      referenceRows.push(['Correlação', pop.correlation]);
     }
-    rows.push('</table>');
+    if (referenceRows.length > 1) sheets.push({ name: t('sidebar.population'), rows: referenceRows });
 
-    rows.push(`<h2>${t('export.ellipsePng')}</h2><table border="1">`);
-    rows.push(htmlRow(['Elipse', 'Ponto', 'R/H', 'Xc/H'], true));
-    ellipseRows().forEach((row) => rows.push(htmlRow(row)));
-    rows.push('</table>');
+    sheets.push({ name: 'Pontos das elipses', rows: [['Elipse', 'Ponto', axisLabelSet().xShort, axisLabelSet().yShort], ...ellipseRows()] });
 
     if (METHOD === 'confidence') {
-      rows.push(`<h2>${t('ellipseCompare.title')}</h2><table border="1">`);
-      rows.push(htmlRow(['Elipse', 'Tipo', 'Momento', 'ID pareado', 'N', 'R/H média', 'R/H DP', 'Xc/H média', 'Xc/H DP', 'Correlação', 'Cor', 'Traço', 'Fator Specific'], true));
+      const axisLabels = axisLabelSet();
+      const ellipseSheet = [['Elipse', 'Tipo', 'Momento', 'ID pareado', 'N', `${axisLabels.xShort} média`, `${axisLabels.xShort} DP`, `${axisLabels.yShort} média`, `${axisLabels.yShort} DP`, 'Correlação', 'Sexo', 'Faixa etária', 'País', 'Equipamento', 'População', 'Cor', 'Traço', 'Espessura', 'Fator Specific']];
       selectedEllipsePopulations().forEach((item) => {
-        rows.push(htmlRow([
+        ellipseSheet.push([
           item.name,
           item.type || 'reference',
           item.moment || '',
@@ -2379,19 +2777,24 @@
           item.xc_h_mean,
           item.xc_h_sd,
           item.correlation,
+          item.sex_code || '',
+          item.age_range || '',
+          item.country || '',
+          item.equipment || '',
+          item.population_type || '',
           item.style?.color || '',
           item.style?.dash || '',
+          item.style?.width || '',
           item.raw?.geometryFactor || ''
-        ]));
+        ]);
       });
-      rows.push('</table>');
+      sheets.push({ name: 'Elipses', rows: ellipseSheet });
     }
 
-    rows.push(`<h2>${t('chart.measurements')}</h2><table border="1">`);
-    rows.push(htmlRow(['ID', 'Grupo', 'Momento', 'R', 'Xc', 'H', 'R/H', 'Xc/H', 'D² Mahalanobis', 'Classificação'], true));
+    const measurementSheet = [['ID', 'Grupo', 'Momento', 'R', 'Xc', 'H', 'R/H', 'Xc/H', 'D² Mahalanobis', 'Classificação']];
     measurements.forEach((item) => {
       const d2 = pop ? covarianceDistance(pop, item) : null;
-      rows.push(htmlRow([
+      measurementSheet.push([
         item.id,
         item.group,
         item.moment,
@@ -2402,13 +2805,12 @@
         item.xc_h,
         d2 === null ? '' : d2,
         d2 === null ? '' : classifyDistance(d2)
-      ]));
+      ]);
     });
-    rows.push('</table>');
+    if (measurements.length) sheets.push({ name: t('chart.measurements'), rows: measurementSheet });
 
     if (ellipseComparisonResults.length) {
-      rows.push(`<h2>${t('ellipseCompare.pairwise')}</h2><table border="1">`);
-      rows.push(htmlRow([
+      const comparisonSheet = [[
         t('ellipseCompare.ellipseA'),
         t('ellipseCompare.ellipseB'),
         'N A',
@@ -2419,9 +2821,9 @@
         t('analysis.f'),
         t('analysis.df'),
         t('analysis.p')
-      ], true));
+      ]];
       ellipseComparisonResults.forEach((result) => {
-        rows.push(htmlRow([
+        comparisonSheet.push([
           result.popA ? result.popA.name : '',
           result.popB ? result.popB.name : '',
           result.nA || '',
@@ -2432,33 +2834,30 @@
           result.error ? '' : result.fValue,
           result.error ? '' : `${result.df1}, ${result.df2}`,
           result.error ? '' : result.pValue
-        ]));
+        ]);
       });
-      rows.push('</table>');
+      sheets.push({ name: 'Comparações pareadas', rows: comparisonSheet });
     }
 
     if (currentAnalysisResult && !currentAnalysisResult.error) {
-      rows.push(`<h2>${t('analysis.title')}</h2><table border="1">`);
-      rows.push(htmlRow(['Teste', 'Valor'], true));
-      rows.push(htmlRow(['Modo', currentAnalysisResult.mode]));
-      rows.push(htmlRow(['A', currentAnalysisResult.selectionA]));
-      rows.push(htmlRow(['B', currentAnalysisResult.selectionB]));
-      rows.push(htmlRow([t('analysis.hotelling'), currentAnalysisResult.t2]));
-      rows.push(htmlRow([t('analysis.mahalanobis'), Math.sqrt(currentAnalysisResult.d2)]));
-      rows.push(htmlRow([t('analysis.mahalanobis2'), currentAnalysisResult.d2]));
-      rows.push(htmlRow([t('analysis.f'), currentAnalysisResult.fValue]));
-      rows.push(htmlRow([t('analysis.df'), `${currentAnalysisResult.df1}, ${currentAnalysisResult.df2}`]));
-      rows.push(htmlRow([t('analysis.p'), currentAnalysisResult.pValue]));
-      rows.push('</table>');
+      sheets.push({
+        name: t('analysis.title'),
+        rows: [
+          ['Teste', 'Valor'],
+          ['Modo', currentAnalysisResult.mode],
+          ['A', currentAnalysisResult.selectionA],
+          ['B', currentAnalysisResult.selectionB],
+          [t('analysis.hotelling'), currentAnalysisResult.t2],
+          [t('analysis.mahalanobis'), Math.sqrt(currentAnalysisResult.d2)],
+          [t('analysis.mahalanobis2'), currentAnalysisResult.d2],
+          [t('analysis.f'), currentAnalysisResult.fValue],
+          [t('analysis.df'), `${currentAnalysisResult.df1}, ${currentAnalysisResult.df2}`],
+          [t('analysis.p'), currentAnalysisResult.pValue]
+        ]
+      });
     }
 
-    rows.push('</body></html>');
-    const blob = new Blob([rows.join('\n')], { type: 'application/vnd.ms-excel;charset=utf-8' });
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.download = `aiBIVA-${METHOD}-${new Date().toISOString().slice(0, 10)}.xls`;
-    link.click();
-    setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+    downloadWorkbook(`aiBIVA-${METHOD}-${new Date().toISOString().slice(0, 10)}`, sheets);
   }
 
   function changeLanguage(lang) {
@@ -2475,7 +2874,7 @@
     document.querySelectorAll('[data-i18n-title]').forEach((el) => {
       el.setAttribute('title', t(el.getAttribute('data-i18n-title')));
     });
-    if (allPopulations.length) {
+    if (allPopulations.length && document.getElementById('filterCountry')) {
       const selectedCountry = document.getElementById('filterCountry').value;
       const selectedAge = document.getElementById('filterAge').value;
       populateFilter('filterCountry', [...new Set(allPopulations.map((pop) => pop.country))], t('filters.all'));
@@ -2483,12 +2882,15 @@
       document.getElementById('filterCountry').value = selectedCountry;
       document.getElementById('filterAge').value = selectedAge;
       applyFilters();
+    } else {
+      populateEllipseFilters();
     }
     if (bivaChart) {
       updateDatasetLabels();
       if (bivaChart.options) {
-        bivaChart.options.scales.x.title.text = METHOD === 'tolerance' && tolerancePlotMode === 'zscore' ? t('chart.zx') : t('chart.x');
-        bivaChart.options.scales.y.title.text = METHOD === 'tolerance' && tolerancePlotMode === 'zscore' ? t('chart.zy') : t('chart.y');
+        const axisLabels = axisLabelSet();
+        bivaChart.options.scales.x.title.text = axisLabels.x;
+        bivaChart.options.scales.y.title.text = axisLabels.y;
       }
       bivaChart.update();
     }
@@ -2550,11 +2952,16 @@
   window.refreshAnalysisControls = refreshAnalysisControls;
   window.runConfidenceAnalysis = runConfidenceAnalysis;
   window.toggleEllipseComparison = toggleEllipseComparison;
+  window.renderEllipseSelectionList = renderEllipseSelectionList;
   window.clearEllipseComparison = clearEllipseComparison;
   window.selectCurrentEllipseForComparison = selectCurrentEllipseForComparison;
   window.updateEllipseStyle = updateEllipseStyle;
   window.removeCustomEllipse = removeCustomEllipse;
   window.addConfidenceEllipse = addConfidenceEllipse;
+  window.importConfidenceEllipses = importConfidenceEllipses;
+  window.downloadEllipseTemplate = downloadEllipseTemplate;
+  window.importToleranceMeasurements = importToleranceMeasurements;
+  window.downloadToleranceTemplate = downloadToleranceTemplate;
   window.updateConfidenceInputMode = updateConfidenceInputMode;
   window.loadRelatedStyleControls = loadRelatedStyleControls;
   window.applyRelatedStyle = applyRelatedStyle;
